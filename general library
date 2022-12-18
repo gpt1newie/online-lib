@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Library</title>
+</head>
+<body>
+  <header>
+    <h1>General Library</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#upload">Upload</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#security">Security</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Welcome to General Library</h2>
+      <p>Welcome to General Library, where you can browse and download a wide variety of books and documents. To get started, simply click on one of the links in the navigation menu to upload a book, view reviews, or learn more about our security measures.</p>
+    </section>
+    <section id="upload">
+      <h2>Upload a Book</h2>
+      <p>To upload a book to General Library, simply fill out the form below and attach the book file. Your book will be reviewed by our team before it is made available to other users.</p>
+      <form action="/upload-book" method="post" enctype="multipart/form-data">
+        <label for="title">Book Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="file">Select File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <p>Check out what other users are saying about the books available on General Library:</p>
+      <ul>
+        <li>
+          <h3>The Alchemist</h3>
+          <p>I absolutely loved this book! It's a must-read for anyone seeking personal growth and fulfillment.</p>
+        </li>
+        <li>
+          <h3>Pride and Prejudice</h3>
+          <p>I found this book to be a bit slow-paced, but the characters were well-developed and the ending was satisfying.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="security">
+      <h2>Security</h2>
+      <p>At General Library, we take security seriously. All uploaded books are scanned for viruses before they are made available to other users. In addition, we use secure SSL encryption to protect your personal information and ensure that your browsing experience is safe and secure.</p>
+    </section>
+  </main>
+  <footer>
+    <
